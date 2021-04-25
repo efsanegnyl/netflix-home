@@ -1,0 +1,121 @@
+@import 'reset';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&family=Rubik&display=swap');
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Netflix Sans', 'Helvetica Neue', 'Noto Sans KR', Helvetica, Arial, ;
+}
+
+.container {
+    background-color: #151515;
+    width: 100%;
+    height: 100%;
+}
+
+.menu_navigation {
+    width: 100%;
+    height: 80px;
+    padding: 1rem 3rem;
+    background-color: antiquewhite;
+    background: linear-gradient(to bottom, #000000 0%, #151515 60%);
+
+    .logo {
+        width: 80px;
+
+        a img {
+            width: 100%;
+        }
+    }
+}
+
+.list_profil_container {
+    margin: 2rem 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .list_profil {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .profil_gate_label {
+            color: white;
+            display: flex;
+            margin-bottom: 2rem;
+            font-size: 3.5vw;
+            font-weight: 400;
+            letter-spacing: 1px;
+
+        }
+
+
+        .choose_profile {
+            margin-bottom: 30px;
+
+
+            li {
+                display: inline-flex;
+                text-align: center;
+                margin: 0 5px;
+                padding: .8rem;
+                color: rgba(219, 208, 208, 0.753);
+                font-size: 18px;
+                font-weight: 400;
+
+                &:hover {
+                    color: white;
+                    font-weight: 500;
+                }
+
+                &:hover .profil_icon {
+                    border: 1px solid;
+                }
+
+                div {
+
+                    display: flex;
+                    flex-direction: column;
+                    cursor: pointer;
+                    padding: 1px;
+                    margin-bottom: 5px;
+
+                    .avatar_wrapper {
+
+                        .profil_icon {
+                            background: round;
+                            border-radius: 5px;
+                            width: 9rem;
+                            height: 9rem;
+                        }
+                    }
+
+                    .profile_name {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .profil_button {
+
+        a {
+            color: rgba(219, 208, 208, 0.753);
+            font-size: 20px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 5px 20px;
+            border: 1px solid;
+            transition: all .3s;
+
+            &:hover {
+                color: #fff;
+            }
+
+        }
+    }
+}
